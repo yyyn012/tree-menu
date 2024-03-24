@@ -1,17 +1,32 @@
-$(document).ready(function () {
-  //menu v1
-  $(".menu-v1").mouseover(function () {
-    $(this).children(".submenu").stop().slideDown();
-  });
-  $(".menu-v1").mouseleave(function () {
-    $(this).children(".submenu").stop().slideUp();
-  });
+// $(document).ready(function () {
+//   $(".menu>a").click(function () {
+//     $(this).next("ul").toggleClass("hide");
+//     var submenu = $(this).next("ul");
+//     if (submenu.is(":visible")) {
+//       submenu.show();
+//     } else {
+//       if (submenu.is(":invisible")) {
+//         submenu.hide();
+//       }
+//     }
+//   });
+// });
 
-  //menu v2
-  $(".menu-v2").mouseover(function () {
-    $(this).children(".submenu").show(200);
-  });
-  $(".menu-v2").mouseleave(function () {
-    $(this).children(".submenu").hide(200);
-  });
-});
+// $(document).ready(function () {
+//   $(".menu-btn").on("click", function () {
+//     $(this).next().toggleClass("hide");
+//   });
+// });
+
+const menuBtn = document.querySelectorAll(".menu-btn");
+const hiddenMenu = document.getElementsByClassName(".hide");
+
+function toggleMenu() {
+  if (hiddenMenu.classList.contains("hide")) {
+    hiddenMenu.classList.remove("hide");
+    hiddenMenu.classList.add("open");
+  } else {
+    hiddenMenu.classList.remove("open");
+    hiddenMenu.classList.add("hide");
+  }
+}

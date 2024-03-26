@@ -10,27 +10,34 @@
   </head>
 
   <body>
-    <div>
-      <ul class="nav">
-        <li class="menu">
-          <a class="menu-btn" onclick="toggleMenu()">상위메뉴1</a>
-          <ul class="hide">
-            <li>메뉴1-1</li>
-            <li>메뉴1-2</li>
-            <li>메뉴1-3</li>
-          </ul>
-        </li>
-
-        <li class="menu">
-          <a class="menu-btn" onclick="toggleMenu()">상위메뉴2</a>
-          <ul>
-            <li class="hide">메뉴2-1</li>
-            <li class="hide">메뉴2-2</li>
-            <li class="hide">메뉴2-3</li>
-          </ul>
-        </li>
+    <h3>트리메뉴</h3>
+    <hr />
+    <a onmouseover="showmenu('menu1')"> 교육원소개</a><br />
+    <div id="menu" style="display: none">
+      <ul>
+        <li>소개</li>
+        <li>교육 시설</li>
+        <li>교수 소개</li>
       </ul>
     </div>
+    <a onmouseover="showmenu('menu2')">과정안내</a><br />
+    <div id="menu" style="display: none">
+      <ul>
+        <li>소개</li>
+        <li>교육 시설</li>
+        <li>교수 소개</li>
+      </ul>
+    </div>
+
+    <a onmouseover="showmenu('menu3')">수강안내</a><br />
+    <div id="menu" style="display: none">
+      <ul>
+        <li>소개</li>
+        <li>교육 시설</li>
+        <li>교수 소개</li>
+      </ul>
+    </div>
+
     <script src="/index.js" type="text/javascript" defer="defer"></script>
   </body>
 </html>

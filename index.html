@@ -4,39 +4,38 @@
   <head>
     <title>menu</title>
     <meta charset="utf-8" />
-    <meta http-equiv="content-type" content="text/html" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
 
   <body>
-    <h3>트리메뉴</h3>
-    <hr />
-    <a onmouseover="showmenu('menu1')"> 교육원소개</a><br />
-    <div id="menu" style="display: none">
-      <ul>
-        <li>소개</li>
-        <li>교육 시설</li>
-        <li>교수 소개</li>
-      </ul>
-    </div>
-    <a onmouseover="showmenu('menu2')">과정안내</a><br />
-    <div id="menu" style="display: none">
-      <ul>
-        <li>소개</li>
-        <li>교육 시설</li>
-        <li>교수 소개</li>
-      </ul>
-    </div>
+    <ul class="list">
+      <a href="#tab1" class="btn" Menu()> 교육원소개</a>
+      <li class="on">
+        <ul id="tab1" class="content">
+          <li>소개</li>
+          <li>교육 시설</li>
+          <li>교수 소개</li>
+        </ul>
+      </li>
 
-    <a onmouseover="showmenu('menu3')">수강안내</a><br />
-    <div id="menu" style="display: none">
-      <ul>
-        <li>소개</li>
-        <li>교육 시설</li>
-        <li>교수 소개</li>
-      </ul>
-    </div>
+      <a href="#tab2" class="btn" Menu()>Numbers</a>
+      <li class="on">
+        <ul id="tab2" class="content">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </li>
+
+      <a href="#tab3" class="btn" Menu()>A</a>
+      <li class="on">
+        <ul id="tab3" class="content">
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+        </ul>
+      </li>
+    </ul>
 
     <script src="/index.js" type="text/javascript" defer="defer"></script>
   </body>

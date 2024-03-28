@@ -1,21 +1,20 @@
-a {
-  text-decoration: none;
-  font-weight: 700;
-  cursor: pointer;
-}
-
 li {
   list-style: none;
-  padding: 3px;
 }
 
-.hide {
-  display: none;
+.list {
+  overflow: hidden;
 }
-.open {
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
   display: block;
+  padding-bottom: 3px;
 }
 
-.menu a {
-  cursor: pointer;
+.list .on {
+  display: none;
+  position: absolute;
 }

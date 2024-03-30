@@ -2,19 +2,15 @@ li {
   list-style: none;
 }
 
-.list {
-  overflow: hidden;
-}
-
 a {
   font-weight: 700;
   text-decoration: none;
   color: #000;
   display: block;
   padding-bottom: 5px;
+  cursor: pointer;
 }
 
-.list .on {
+.on {
   display: none;
-  position: absolute;
 }

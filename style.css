@@ -12,7 +12,6 @@ a {
 }
 
 .list-title {
-  /* position: relative; */
   font-size: 17px;
   width: 100vw;
   height: 70px;
@@ -25,17 +24,20 @@ a {
   border-bottom: 1px solid #aaa;
 }
 
-span {
-  display: block;
-  color: #ccc;
-  font-size: 15px;
-  padding: 0 10px 10px 10px;
-  border: 1px solid red;
-  line-height: 20px;
-}
-
 .on {
   display: none;
+}
+
+.content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+span {
+  color: #ccc;
+  font-size: 15px;
 }
 
 .list-div {

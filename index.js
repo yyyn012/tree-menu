@@ -1,9 +1,9 @@
-const listTitle = document.querySelectorAll(".list-title");
+const listBtn = document.querySelectorAll(".list-btn");
+const onConts = document.querySelectorAll(".on");
 const content = document.querySelectorAll(".content");
 const contentList = document.querySelectorAll(".content > li");
-const onConts = document.querySelectorAll(".on");
 
-listTitle.forEach((btn, index) => {
+listBtn.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     if (onConts[index].classList.contains("on")) {
       onConts[index].classList.remove("on");

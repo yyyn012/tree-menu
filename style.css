@@ -1,5 +1,22 @@
-ul {
-  padding: 0 10px;
+body {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+}
+
+.nav {
+  position: relative;
+  display: block;
+  height: 100vh;
+  border: 1px solid red;
+  overflow-x: hidden;
+}
+
+.nav-list {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  /* margin: 10px; */
 }
 
 li {
@@ -13,13 +30,12 @@ a {
 
 .list-title {
   font-size: 17px;
-  width: 100vw;
+  width: 90%;
   height: 70px;
   line-height: 70px;
   display: block;
   font-weight: 700;
-  display: block;
-  padding-bottom: 5px;
+  /* padding: 5px; */
   cursor: pointer;
   border-bottom: 1px solid #aaa;
 }

@@ -2,14 +2,72 @@ body {
   box-sizing: border-box;
   width: auto;
   height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  top: 0;
+  left: 0;
+  padding: 0 24px 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.logo {
+  width: 80px;
+  height: 14px;
+  z-index: 99;
+}
+
+.nav-btn {
+  background: url(./images/hamburger.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 70px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.nav-btn.active {
+  background: url(images/x_thin_icon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 70px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 9999;
 }
 
 .nav {
   position: relative;
-  display: block;
+  top: 70px;
+  left: 0;
+  width: 100vw;
   height: 100vh;
-  border: 1px solid red;
-  overflow-x: hidden;
+  display: none;
+}
+
+.nav.active {
+  position: relative;
+  display: block;
+  background: #fff;
+  height: 100vh;
+  z-index: 99;
+  overflow: hidden;
 }
 
 .nav-list {
@@ -67,4 +125,16 @@ span {
   height: 70px;
   line-height: 70px;
   border-bottom: 1px solid #ccc;
+}
+
+.section1 {
+  background-color: blanchedalmond;
+  width: 100vw;
+  height: 720px;
+}
+
+.section2 {
+  background-color: aquamarine;
+  width: 100vw;
+  height: 720px;
 }

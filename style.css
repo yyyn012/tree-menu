@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+.body-noScroll {
+  overflow: hidden !important;
+}
+
 .header {
   position: fixed;
   width: 100vw;
@@ -15,8 +19,13 @@ body {
   padding: 0 24px 0;
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.8s;
   z-index: 99;
+}
+
+.header.active {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
 }
 
 .logo {
@@ -62,19 +71,20 @@ body {
 }
 
 .nav.active {
-  position: relative;
+  position: fixed;
+  top: 70px;
+  left: 0;
   display: block;
   background: #fff;
   height: 100vh;
   z-index: 99;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .nav-list {
   position: absolute;
   width: 100%;
   margin: 0 auto;
-  /* margin: 10px; */
 }
 
 li {
